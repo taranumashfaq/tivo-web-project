@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tivo's Project</title>
+        <meta name="description" content="A clean personal project website with an overview, features, and contact form." />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header class="container">
+            <nav>
+                <a class="brand" href="#home">Tivo's Project</a>
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#features">Features</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+        </header>
+
+        <main class="container">
+            <section class="hero" id="home">
+                <div>
+                    <p>Web design made simple.</p>
+                    <h1>Turn Your Ideas Into a Professional Website.</h1>
+                    <p class="meta-time">Local time: <span id="local-time">--:--</span></p>
+                    <p>
+                        I create modern, responsive and user-friendly websites, portfolios, and small businesses. Responsive layout, clear sections, and lightweight interactivity.
+                    </p>
+                    <div class="buttons">
+                        <a class="button" href="#contact">Get in touch</a>
+                        <a class="button-secondary" href="#features">Explore features</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sections" id="about">
+                <div class="about">
+                    <div class="about-content card">
+                        <h2>About Tivo's Project</h2>
+                        <p>
+                            We create modern and respomsive websites designed around your ideas and buisness need. From simple landing pages to professional buisness websites, we focus on clean design, easy navigation, and a smooth user experience.
+                        </p>
+                        <ul>
+                            <li>Modern and responsive design</li>
+                            <li>Mobile-friendly layouts</li>
+                            <li>Customized according to your needs</li>
+                            <li>Clean and user-friendly interface</li>
+                        </ul>
+                    </div>
+                    <aside class="about-aside card">
+                        <h3>Why Choose Tivo's Project?</h3>
+                        <p>
+                            We focus on creating websites that are simple, professional, responsive, and designed around your goals.
+                        </p>
+                    </aside>
+                </div>
+            </section>
+
+            <section class="card-grid features" id="features">
+                <article class="card">
+                    <h2>Responsive design</h2>
+                    <p> Websites that adapt smoothly to phones, tablets, and laptops for a consistent experience on every screen.</p>
+                </article>
+                <article class="card">
+                    <h2>Modern style</h2>
+                    <p> Clean layouts, balanced spacing, and a modern interface that gives your website a professional look.</p>
+                </article>
+                <article class="card">
+                    <h2>User Friendly Experience</h2>
+                    <p>Simple navigation and clear sections make it easy for visitors to find what they need.</p>
+                </article>
+            </section>
+
+            <section class="card" id="contact">
+                <h2>Contact</h2>
+                <p>If you'd like to customize an website, give valid information to get your own website!</p>
+                <form id="contact-form"
+                    action="https://formspree.io/f/xdenzgbk"
+                    method="POST">
+                    <input type="hidden" name="_subject" value="New message from Tivo's Project website" />
+                    <input type="hidden" name="_captcha" value="false" />
+
+                    <label for="name">Name</label>
+                    <input id="name" type="text" name="name" placeholder="Your name" required />
+
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email" placeholder="you@example.com" required />
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+
+                    <button type="submit" class="button">Send message</button>
+                </form>
+                <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+            </section>
+        </main>
+
+        <footer class="container">
+            <div class="footer-row">
+                <p>&copy; <span id="current-year"></span> Tivo's Project.</p>
+                <p>A website made by Taranum,<br> known as Tivo's Project.</p>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
